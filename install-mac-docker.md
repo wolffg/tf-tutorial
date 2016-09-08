@@ -6,7 +6,8 @@ run them on your machine, you will need a working TensorFlow
 installation (v0.10).
 
 Below are instructions on how to set up a TensorFlow environment using
-Docker.
+Docker.  Although Docker runs in a VM, the advantage is that Docker
+images come with all dependencies are pre-installed and pre-compiled.
 
 ## Setup
 
@@ -131,10 +132,3 @@ started your terminal, shown here:
 ## When You're Done
 
 To exit Docker, you can simply enter `exit` or hit `Ctrl-D`.
-
-
-
-
-
-
-

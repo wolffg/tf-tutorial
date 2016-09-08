@@ -26,7 +26,7 @@ cd tf-tutorial
 
 Pip is a package management system used to install and manage software
 packages written in Python.  Virtualenv allows you to manage multiple
-package installations, and, due to limitations in OS X, is required.
+package installations.
 
 At your Terminal window, run the following commands. 
 ```
@@ -75,11 +75,10 @@ From your "tensorflow" virtualenv prompt, run the following:
 (tensorflow) $ jupyter notebook
 ```
 
-And click on [0_tf_hello_world.ipynb](0_tf_hello_world.ipynb).  
+Click on `0_tf_hello_world.ipynb` to test that jupyter is running
+correctly.
 
-You should be able to run these contents without errors.
-
-Thanks!
+You should be able to run the notebook without issue.
 
 <hr>
 
@@ -90,9 +89,6 @@ you want to run TensorFlow, you can activate by `source
 ~/tensorflow/bin/activate`.  To exit the virtual environment, simply
 type `deactivate`.
 
-You might ask yourself, why do I need this?  The answer is that recent
-versions of OS X hard-install some dependencies, and running `sudo
-pip` does not overwrite them successfully, and you will have trouble
-running.  In the long run, if you work with different versions of
-different Python packages, using something like `Virtualenv` will pay
-off.
+Without using Virtualenv, at this time you may run into issues with
+upgrading some pre-installed Python dependencies (especially `numpy`
+on MacOS El Capitan 10.11).
