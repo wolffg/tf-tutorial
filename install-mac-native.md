@@ -34,6 +34,7 @@ At your Terminal window, run the following commands.
 sudo easy_install --upgrade pip
 sudo easy_install --upgrade six
 sudo pip install --upgrade virtualenv
+sudo pip install --upgrade protobuf
 ```
 
 These should install pip, some dependencies, and Virtualenv.
