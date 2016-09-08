@@ -8,6 +8,13 @@ Follow these instructions, which assume you have Ubuntu Linux.  Other
 Linux distributions may not be supported.
 
 
+## Clone this repository.
+
+```
+git clone https://github.com/wolffg/tf-tutorial.git
+cd tf-tutorial
+```
+
 ## Install pip and dependencies
 
 ```
