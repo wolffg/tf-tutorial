@@ -14,7 +14,7 @@ and will run the fastest.
 VM.](install-mac-docker.md) If for some reason you can't install
 TensorFlow natively or already have Docker installed, you can try this.
 
-1. [Install TensorFlow directly on your Ubuntu/Linux
+ 1. [Install TensorFlow directly on your Ubuntu/Linux
 machine.](install-ubuntu.md)
 
 If you run into trouble, our full install instrictions are available
