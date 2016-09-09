@@ -31,10 +31,14 @@ package installations.
 At your Terminal window, run the following commands. 
 ```
 # Mac OS X
-sudo easy_install --upgrade pip
+$ sudo easy_install --upgrade pip
+```
+
+Once you've installed pip, you'll need to add a few more packages.
+
+```
 sudo easy_install --upgrade six
 sudo pip install --upgrade virtualenv
-sudo pip install --upgrade protobuf
 ```
 
 These should install pip, some dependencies, and Virtualenv.
@@ -62,8 +66,9 @@ Finally, Select a binary and install TensorFlow and Jupyter. For this
 lab, we will use CPU-only Mac.
 
 ```
-# Mac OS X, CPU only, Python 2.7:
-export TF_BINARY_URL=export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.10.0-py2-none-any.whl
+# Within the (tensorflow) virtualenv
+pip install --upgrade protobuf
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.10.0-py2-none-any.whl
 pip install --upgrade $TF_BINARY_URL
 pip install --upgrade jupyter
 ```
