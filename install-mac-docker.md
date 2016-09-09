@@ -1,7 +1,7 @@
 
 # Installing TensorFlow on Docker on a Mac.
 
-This tutorial is presented via [Jupyter](jupyter.org) notebooks.  To
+This tutorial is presented via [Jupyter](http://jupyter.org) notebooks.  To
 run them on your machine, you will need a working TensorFlow
 installation (v0.10).
 
@@ -9,7 +9,17 @@ Below are instructions on how to set up a TensorFlow environment using
 Docker.  Although Docker runs in a VM, the advantage is that Docker
 images come with all dependencies are pre-installed and pre-compiled.
 
-## Setup
+## Clone this repository
+
+Using git, clone this tutorial and enter that directory.
+
+```
+cd $HOME
+git clone https://github.com/wolffg/tf-tutorial.git
+cd tf-tutorial
+```
+
+## Set up Docker
 
 Docker runs your notebooks from a virtual machine.  Docker images
 already contain installed and compiled versions of TensorFlow.
@@ -84,7 +94,7 @@ print(sess.run(hello))
 
 If you see "Hello, Tensorflow!", it works!
 
-## Run Docker with Jupyter and TensorBoard
+## Run Docker with Jupyter
 
 Note: On Mac OS X, if you have not already opened a **Docker
 Quickstart Terminal**, you must do so now.
@@ -93,7 +103,7 @@ Go to where you cloned the repository (we're assuming `$HOME`):
 
 ```
 cd $HOME
-docker run  -v $HOME/tensorflow-tutorial:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0.0:8888:8888 -it tensorflow/tensorflow:0.10.0rc0 bash
+docker run  -v $HOME/tf-tutorial:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0.0:8888:8888 -it tensorflow/tensorflow:0.10.0rc0 bash
 ```
 
 This will start a Docker instance with the tutorial materials mounted
@@ -109,11 +119,6 @@ cd /tutorial
 /run_jupyter.sh &
 ```
 
-You will also want to run TensorBoard:
-
-```
-tensorboard --logdir=`pwd` &
-```
 
 **On OSX:** You can navigate to:
 
@@ -121,14 +126,11 @@ tensorboard --logdir=`pwd` &
 
 or whichever local address your VM has on your machine.
 
-TensorBoard is available in a similar place, either [http://localhost:6006](http://localhost:6006) or
-[http://192.168.100.99:6006](http://192.168.100.99:6006) on MacOS.
-
 On OS X, you can find the exact address under the whale where you
 started your terminal, shown here:
 
 ![Docker whale image](images/docker-whale.png)
 
-## When You're Done
+## When you're done
 
 To exit Docker, you can simply enter `exit` or hit `Ctrl-D`.

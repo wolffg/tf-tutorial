@@ -1,7 +1,7 @@
 
 # Installing TensorFlow Natively on OS X
 
-We will present the tutorial in [Jupyter](jupyter.org) notebooks.  To
+We will present the tutorial in [Jupyter](http://jupyter.org) notebooks.  To
 run them on your machine, you will need a working TensorFlow
 installation (v0.10).
 
@@ -28,10 +28,10 @@ Pip is a package management system used to install and manage software
 packages written in Python.  Virtualenv allows you to manage multiple
 package installations.
 
-At your Terminal window, run the following commands. 
+At your Terminal window, run the following command. 
 ```
 # Mac OS X
-$ sudo easy_install --upgrade pip
+sudo easy_install --upgrade pip
 ```
 
 Once you've installed pip, you'll need to add a few more packages.
@@ -41,29 +41,26 @@ sudo easy_install --upgrade six
 sudo pip install --upgrade virtualenv
 ```
 
-These should install pip, some dependencies, and Virtualenv.
+These should some dependencies and Virtualenv.
 
 Now, create a virtual environment.
 
 ```
-$ virtualenv --system-site-packages ~/tensorflow
+virtualenv --system-site-packages ~/tensorflow
 ```
 
 You will need to Activate the environment, which is to say switch your
 Python enviroment to a fresh one with clean dependencies.
 
 ```
-$ source ~/tensorflow/bin/activate
-New python executable in /Users/wolff/tensorflow/bin/python
-Installing setuptools, pip, wheel...done.
-(tensorflow) $
+source ~/tensorflow/bin/activate
 ```
 
 You are now running in a special Python enviroment with safe
-dependencies.  
+dependencies. Your prompt should start with `(tensorflow) $`.
 
-Finally, Select a binary and install TensorFlow and Jupyter. For this
-lab, we will use CPU-only Mac.
+Select a binary and install protobufs, TensorFlow and Jupyter. For
+this lab, we will use CPU-only Mac.
 
 ```
 # Within the (tensorflow) virtualenv
