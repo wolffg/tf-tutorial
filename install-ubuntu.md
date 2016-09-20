@@ -18,7 +18,7 @@ cd tf-tutorial
 ## Install pip and dependencies
 
 ```
-sudo apt-get install python-pip python-dev
+sudo apt-get install python-pip python-dev python-matplotlib
 ```
 
 ## Install TensorFlow
