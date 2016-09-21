@@ -48,12 +48,12 @@ docker run hello-world
 
 #### Installing and Running the TensorFlow Image
 
-On OS X, if you have not already, run the Docker for Mac App,
-usually found in `/Applications/Docker`, and which looks like this:
+On OS X, if you have not already, run the Docker for Mac app,
+usually placed in `/Applications/`, and which looks like this:
 
 ![Docker For Mac Icon](images/docker-for-mac.png)
 
-There will be a long pause as the Docker service starts.
+There may be a long pause as the Docker service starts.
 
 If you click on the whale icon in your toolbar, you should eventually
 see a green light and "Docker is running".
@@ -65,7 +65,8 @@ Go to where you cloned the repository (we're assuming `$HOME`):
 
 ```
 cd $HOME/tf-tutorial
-docker run  -v `pwd`:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0.0:8888:8888 -it tensorflow/tensorflow:0.10.0rc0 bash
+docker run  -v `pwd`:/tutorial -p 0.0.0.0:6006:6006 -p 0.0.0.0:8888:8888 \
+   -it tensorflow/tensorflow:0.10.0rc0 bash
 ```
 
 This will start a Docker instance with the tutorial materials mounted
