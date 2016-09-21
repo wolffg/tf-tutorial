@@ -60,7 +60,6 @@ see a green light and "Docker is running".
 
 ## Run Docker with Jupyter
 
-
 Go to where you cloned the repository (we're assuming `$HOME`):
 
 ```
@@ -74,6 +73,12 @@ at `/tutorial`.
 
 *(Note: All further commands are run in the Docker
 image, so your prompt will be `root@[something]#`).*
+
+If you want to do the DeepDream codelab, you will also need to install Pillow within the Docker instance:
+
+```
+pip install Pillow
+```
 
 Once started, run the Jupyter server in the right directory.
 
