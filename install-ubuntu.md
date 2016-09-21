@@ -28,7 +28,7 @@ This uses CPU only.
 ```
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
-sudo pip install jupyter
+sudo pip install jupyter Pillow
 ```
 
 For GPU instructions, see [tensorflow.org](https://www.tensorflow.org/versions/r0.10/get_started/os_setup.html).
