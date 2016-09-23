@@ -86,7 +86,7 @@ Once started, run the Jupyter server in the right directory.
 
 ```
 cd /tutorial
-/jupyter notebook &
+jupyter notebook &
 ```
 
 
