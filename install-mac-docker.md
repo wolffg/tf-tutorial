@@ -9,6 +9,8 @@ Below are instructions on how to set up a TensorFlow environment using
 Docker.  Although Docker runs in a VM, the advantage is that Docker
 images come with all dependencies are pre-installed and pre-compiled.
 
+*Note: Docker for Mac requires OS X 10.10.3 Yosemite or newer running on a 2010 or newer Mac.*
+
 ## Clone this repository
 
 Using git, clone this tutorial and enter that directory.
