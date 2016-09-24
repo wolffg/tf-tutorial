@@ -49,6 +49,12 @@ Now, create a virtual environment.
 virtualenv --system-site-packages ~/tensorflow
 ```
 
+> Note: If you have already installed anaconda, some versions of
+> anaconda and virtualenv are not compatible.  If you have trouble,
+> such as seeing errors about "sys.prefix", you may want to try to
+> use the [TensorFlow anaconda installation instructions](https://www.tensorflow.org/versions/r0.10/get_started/os_setup.html#anaconda-installation).
+> You'll also need to install matplotlib and Pillow as well to get the full experience.
+
 You will need to Activate the environment, which is to say switch your
 Python enviroment to a fresh one with clean dependencies.
 
@@ -82,7 +88,7 @@ From your "tensorflow" virtualenv prompt, run the following:
 Click on `0_tf_hello_world.ipynb` to test that jupyter is running
 correctly.
 
-You should be able to run the notebook without issue.
+You should be able to run the code in notebook.
 
 <hr>
 
@@ -95,4 +101,5 @@ type `deactivate`.
 
 Without using Virtualenv, at this time you may run into issues with
 upgrading some pre-installed Python dependencies (especially `numpy`
-on MacOS El Capitan 10.11).
+on MacOS El Capitan 10.11).  Anaconda is another solution to managing
+dependencies, but the 
